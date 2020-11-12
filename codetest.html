@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web basic</title>
+    <style type="text/css">
+
+* {
+  box-sizing: border-box;
+}
+
+    body{margin:0px;padding: 0px;}
+
+
+    header{width: 100%;text-align: center;padding: 25px;background-color: rgb(223, 208, 188);}
+
+
+    .nav{background-color: black;padding:30px;}
+    .nav a{margin-left: 5px;padding: 8px;color:white;background-color: gray;margin: 8px;border-radius: 8px;}
+    
+   /* Column container */
+.row {  
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: #f1ebeb;
+  padding: 33px;text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 33px;line-height: 30px;
+}
+
+.nav-left{float: right;}
+
+.nav-left a{border-radius: 8px;}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+
+  .nav a,.nav-left{float: none;width: 100%;display: block;}
+}
+
+.footer{display:-ms-flexbox;display: flex;-ms-flex-wrap:wrap ;flex-wrap: wrap;}
+.foot1{-ms-flex: 33%;flex:33%;color: white;padding:20px}
+.foot2{-ms-flex: 33%;flex:33%;color: white;padding:20px}
+.foot3{-ms-flex: 33%;flex:33%;color: white;padding:20px}
+footer{color:white;background:black;width: 100%;padding: 50px;text-align: center;}
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div style="height: 70px;width: 100%;"><h2> COMPANY NAME</h2>
+            <h4>company mark word goes here!</h4>
+        </div>
+    </header>
+
+
+
+
+    <div class="nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <span class="nav-left">
+            <a href="#">info</a>
+          </span>
+  </div>
+
+
+
+
+    <div class="row">
+            <div class="side">
+                    <h2>SIDE SECTION</h2>
+                    <p>Here is side section.here is side section.Here is side section.here is side section.
+                      Here is side section.here is side section.Here is side section.here is side section.
+                    </p>
+            </div>
+            <div class="main">
+                    <h2>MAIN SECTION</h2>
+                    <p>main section main sectionmain section main section<br>
+                      main section main sectionmain section main section 
+                      main section main sectionmain section main section<br>
+                      main section main sectionmain section main section
+                      
+                
+
+                    
+                    </p>  
+            </div>
+    </div>
+
+
+
+<footer>
+  <div class="footer">
+    <div class="foot1">
+     footer content<br/>
+      @ 2021 production rate.<br/>
+      Satisfying your  needs
+    </div>
+
+
+    <div class="foot2">
+      Contact us on:footer content</br>
+      Or Email us on the address:<br/>
+      footercontent@gmail.com<br/>
+      <small>Thanks for your patronage</small>
+    </div>
+
+
+    <div class="foot3">
+      Our company has guarantee</br>
+      of 1 year.If damage, it can <br/>
+      be return for exchanged.</br>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
